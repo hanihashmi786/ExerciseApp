@@ -1,18 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, FlatList } from 'react-native';
-import { useFonts } from 'expo-font';
-import AppLoading from 'expo-app-loading';
+import { useNavigation } from '@react-navigation/native'; // Import useNavigation hook
 import { styles } from '../styles/Onboard1.styles';
 
 const Onboard1 = () => {
-  const [fontsLoaded] = useFonts({
-    'Poppins-Bold': require('../assets/fonts/Poppins-Bold.ttf'),
-    'Poppins-Regular': require('../assets/fonts/Poppins-Regular.ttf'),
-  });
-
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
+  const [selectedOption, setSelectedOption] = useState(null);
+  const navigation = useNavigation(); // Use the hook to get the navigation object
 
   const options = [
     { id: '1', label: 'Release Stress' },
@@ -23,29 +16,49 @@ const Onboard1 = () => {
   ];
 
   const renderItem = ({ item }) => (
-    <TouchableOpacity style={styles.option}>
-      <Text style={styles.optionText}>{item.label}</Text>
+    <TouchableOpacity
+      style={[
+        styles.option,
+        selectedOption === item.id && { borderColor: '#FFD700' }, // Highlight selected option
+      ]}
+      onPress={() => setSelectedOption(item.id)}
+    >
+      <View style={styles.optionContent}>
+        <View
+          style={[
+            styles.radioButton,
+            selectedOption === item.id && styles.radioButtonSelected, // Highlight selected radio button
+          ]}
+        />
+        <Text style={styles.optionText}>{item.label}</Text>
+      </View>
     </TouchableOpacity>
   );
 
   return (
     <View style={styles.container}>
+      {/* Progress Indicator */}
       <View style={styles.progressIndicator}>
         {[1, 2, 3, 4, 5].map((step, index) => (
-          <View
-            key={index}
-            style={[
-              styles.indicator,
-              step === 1 && styles.activeIndicator, // Active step styling
-            ]}
-          />
+          <View key={index} style={styles.indicatorContainer}>
+            <View
+              style={[
+                styles.indicator,
+                step === 1 && styles.activeIndicator, // Highlight current step
+              ]}
+            >
+              <Text style={styles.indicatorText}>{step}</Text>
+            </View>
+          </View>
         ))}
       </View>
 
+      {/* Title */}
       <Text style={styles.title}>
         What <Text style={styles.highlight}>Motivates</Text> You The Most?
       </Text>
 
+      {/* Options */}
       <FlatList
         data={options}
         renderItem={renderItem}
@@ -53,10 +66,15 @@ const Onboard1 = () => {
         contentContainerStyle={styles.optionsContainer}
       />
 
+      {/* Buttons */}
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.nextButton}>
+        <TouchableOpacity
+          style={styles.nextButton}
+          onPress={() => navigation.navigate('Onboard2')} // Navigate to Onboard2
+        >
           <Text style={styles.nextButtonText}>Next</Text>
         </TouchableOpacity>
+
         <TouchableOpacity>
           <Text style={styles.skipButtonText}>Skip</Text>
         </TouchableOpacity>

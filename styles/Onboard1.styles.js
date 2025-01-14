@@ -5,21 +5,32 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFFFF',
     padding: 20,
+    paddingTop: 60, // Adds extra space at the top
   },
   progressIndicator: {
     flexDirection: 'row',
     justifyContent: 'center',
     marginBottom: 20,
   },
-  indicator: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-    backgroundColor: '#E0E0E0',
+  indicatorContainer: {
+    alignItems: 'center',
     marginHorizontal: 5,
+  },
+  indicator: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    backgroundColor: '#E0E0E0',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   activeIndicator: {
     backgroundColor: '#FFD700',
+  },
+  indicatorText: {
+    fontFamily: 'Poppins-Bold',
+    fontSize: 12,
+    color: '#FFFFFF',
   },
   title: {
     fontFamily: 'Poppins-Bold',
@@ -41,6 +52,24 @@ export const styles = StyleSheet.create({
     borderColor: '#E0E0E0',
     borderRadius: 8,
     marginBottom: 15,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  optionContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  radioButton: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: '#E0E0E0',
+    marginRight: 15,
+  },
+  radioButtonSelected: {
+    borderColor: '#FFD700',
+    backgroundColor: '#FFD700',
   },
   optionText: {
     fontFamily: 'Poppins-Regular',
