@@ -55,9 +55,21 @@ const Dashboard = () => {
           <View style={styles.sidebarSeparator} />
           {/* Sidebar Items */}
           {sidebarItems.map((item, index) => (
-            <TouchableOpacity key={index} style={styles.sidebarItem}>
-              <Text style={styles.sidebarItemText}>{item}</Text>
-            </TouchableOpacity>
+            <TouchableOpacity
+    key={index}
+    style={styles.sidebarItem}
+    onPress={() => {
+      if (item === 'Exercise Plans') {
+        navigation.navigate('SelectExercisePlan'); // Navigate to SelectExercisePlan
+      } else if (item === 'Diet Plans') {
+        navigation.navigate('SelectDietPlan'); // Navigate to SelectDietPlan
+      }
+      setSidebarVisible(false); // Close the sidebar
+    }}
+  >
+    <Text style={styles.sidebarItemText}>{item}</Text>
+  </TouchableOpacity>
+            
           ))}
         </View>
       )}

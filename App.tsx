@@ -8,6 +8,8 @@ import Onboard4 from './screens/Onboard4'; // Make sure Onboard2 exists
 import Onboard5 from './screens/Onboard5'; // Make sure Onboard2 exists
 import Dashboard from './screens/Dashboard'; // Make sure Onboard2 exists
 import UserSettings from './screens/UserSettings';
+import SelectExercisePlan from './screens/SelectExercisePlan';
+import SelectDietPlan from './screens/SelectDietPlan';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +25,8 @@ const App = () => {
         <Stack.Screen name="Onboard5" component={Onboard5} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="UserSettings" component={UserSettings} />
+        <Stack.Screen name="SelectExercisePlan" component={SelectExercisePlan} />
+        <Stack.Screen name="SelectDietPlan" component={SelectDietPlan} />
 
 
       </Stack.Navigator>

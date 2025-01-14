@@ -20,8 +20,8 @@ export const styles = StyleSheet.create({
     padding: 10,
   },
   icon: {
-    width: 24,
-    height: 24,
+    width: 30,
+    height: 30,
     resizeMode: 'contain',
   },
   headingContainer: {
