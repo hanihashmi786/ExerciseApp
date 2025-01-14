@@ -4,6 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Onboard1 from './screens/Onboard1';
 import Onboard2 from './screens/Onboard2'; // Make sure Onboard2 exists
 import Onboard3 from './screens/Onboard3'; // Make sure Onboard2 exists
+import Onboard4 from './screens/Onboard4'; // Make sure Onboard2 exists
+import Onboard5 from './screens/Onboard5'; // Make sure Onboard2 exists
 
 const Stack = createStackNavigator();
 
@@ -15,6 +17,8 @@ const App = () => {
         <Stack.Screen name="Onboard1" component={Onboard1} />
         <Stack.Screen name="Onboard2" component={Onboard2} />
         <Stack.Screen name="Onboard3" component={Onboard3} />
+        <Stack.Screen name="Onboard4" component={Onboard4} />
+        <Stack.Screen name="Onboard5" component={Onboard5} />
 
       </Stack.Navigator>
     </NavigationContainer>

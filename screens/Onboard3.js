@@ -9,7 +9,7 @@ const Onboard3 = () => {
 
   const handleNext = () => {
     if (selectedDiet) {
-      navigation.navigate('Home'); // Navigate to the next screen
+      navigation.navigate('Onboard4'); // Navigate to the next screen
     } else {
       alert('Please select a diet type!');
     }
