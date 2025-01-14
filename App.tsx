@@ -6,6 +6,8 @@ import Onboard2 from './screens/Onboard2'; // Make sure Onboard2 exists
 import Onboard3 from './screens/Onboard3'; // Make sure Onboard2 exists
 import Onboard4 from './screens/Onboard4'; // Make sure Onboard2 exists
 import Onboard5 from './screens/Onboard5'; // Make sure Onboard2 exists
+import Dashboard from './screens/Dashboard'; // Make sure Onboard2 exists
+import UserSettings from './screens/UserSettings';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +21,9 @@ const App = () => {
         <Stack.Screen name="Onboard3" component={Onboard3} />
         <Stack.Screen name="Onboard4" component={Onboard4} />
         <Stack.Screen name="Onboard5" component={Onboard5} />
+        <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="UserSettings" component={UserSettings} />
+
 
       </Stack.Navigator>
     </NavigationContainer>

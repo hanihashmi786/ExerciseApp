@@ -105,7 +105,7 @@ const Onboard5 = () => {
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={styles.nextButton}
-          onPress={() => navigation.navigate('Onboard6')} // Replace with the next screen
+          onPress={() => navigation.navigate('Dashboard')} // Replace with the next screen
         >
           <Text style={styles.nextButtonText}>Next</Text>
         </TouchableOpacity>
