@@ -45,7 +45,7 @@ export const styles = StyleSheet.create({
     marginbottom: 20,
   },
   highlight: {
-    color: '#FFD700',
+    color: '#FFBD27',
   },
   searchContainer: {
     backgroundColor: '#F5F5F5',

@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     marginHorizontal: 5,
   },
   unitButtonSelected: {
-    backgroundColor: '#FFD700',
+    backgroundColor: '#FFBD27',
   },
   unitButtonText: {
     fontFamily: 'Poppins-Regular',
@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
   },
   unitButtonTextSelected: {
     fontFamily: 'Poppins-Bold',
-    color: '#FFFFFF',
+    color: '#003F63',
   },
 
   contentContainer: {
@@ -91,7 +91,19 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   nextButton: {
-    backgroundColor: '#002B5C',
+    backgroundColor: '#003F63',
+    paddingVertical: 15,
+    paddingHorizontal: 50,
+    borderRadius: 8,
+    marginBottom: 10,
+  },
+  nextButtonText: {
+    fontFamily: 'Poppins-Bold',
+    fontSize: 24,
+    color: '#FFFFFF',
+  },
+  skipButton: {
+    backgroundColor: '#ECE6F0',
     paddingVertical: 15,
     paddingHorizontal: 50,
     borderRadius: 8,
@@ -99,7 +111,7 @@ export const styles = StyleSheet.create({
   },
   skipButtonText: {
     fontFamily: 'Poppins-Regular',
-    fontSize: 14,
-    color: '#A0A0A0',
+    fontSize: 24,
+    color: '#Black',
   },
 });

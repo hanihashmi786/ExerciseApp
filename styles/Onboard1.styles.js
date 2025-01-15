@@ -19,13 +19,13 @@ export const styles = StyleSheet.create({
   indicator: {
     width: 30,
     height: 30,
-    borderRadius: 15,
-    backgroundColor: '#E0E0E0',
+    borderRadius: 50,
+    backgroundColor: '#D9D9D9',
     justifyContent: 'center',
     alignItems: 'center',
   },
   activeIndicator: {
-    backgroundColor: '#FFD700',
+    backgroundColor: '#FFBD27',
   },
   indicatorText: {
     fontFamily: 'Poppins-Bold',
@@ -40,7 +40,7 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
   },
   highlight: {
-    color: '#FFD700',
+    color: '#FFBD27',
   },
   optionsContainer: {
     marginBottom: 30,
@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 20,
     borderWidth: 1,
-    borderColor: '#E0E0E0',
+    borderColor: '#ECE6F0',
     borderRadius: 8,
     marginBottom: 15,
     flexDirection: 'row',
@@ -64,12 +64,12 @@ export const styles = StyleSheet.create({
     height: 20,
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: '#E0E0E0',
+    borderColor: '#ECE6F0',
     marginRight: 15,
   },
   radioButtonSelected: {
-    borderColor: '#FFD700',
-    backgroundColor: '#FFD700',
+    borderColor: '#FFBD27',
+    backgroundColor: '#FFBD27',
   },
   optionText: {
     fontFamily: 'Poppins-Regular',
@@ -80,7 +80,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   nextButton: {
-    backgroundColor: '#002B5C',
+    backgroundColor: '#003F63',
     paddingVertical: 15,
     paddingHorizontal: 50,
     borderRadius: 8,
@@ -88,12 +88,19 @@ export const styles = StyleSheet.create({
   },
   nextButtonText: {
     fontFamily: 'Poppins-Bold',
-    fontSize: 16,
+    fontSize: 24,
     color: '#FFFFFF',
+  },
+  skipButton: {
+    backgroundColor: '#ECE6F0',
+    paddingVertical: 15,
+    paddingHorizontal: 50,
+    borderRadius: 8,
+    marginBottom: 10,
   },
   skipButtonText: {
     fontFamily: 'Poppins-Regular',
-    fontSize: 14,
-    color: '#A0A0A0',
+    fontSize: 24,
+    color: '#Black',
   },
 });

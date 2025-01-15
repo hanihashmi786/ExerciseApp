@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     height: 180, // Increase size
   },
   selectedDiet: {
-    borderColor: '#FFD700', // Highlight selected diet option with yellow
+    borderColor: '#FFBD27', // Highlight selected diet option with yellow
     borderWidth: 3,
   },
   dietImage: {
@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
     borderRadius: 50, // Circular image
   },
   dietImageSelected: {
-    borderColor: '#FFD700', // Change border color on selection
+    borderColor: '#FFBD27', // Change border color on selection
     borderWidth: 5, // Thicker border when selected
   },
   dietLabel: {
@@ -72,7 +72,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   nextButton: {
-    backgroundColor: '#002B5C',
+    backgroundColor: '#003F63',
     paddingVertical: 15,
     paddingHorizontal: 50,
     borderRadius: 8,
@@ -80,7 +80,19 @@ export const styles = StyleSheet.create({
   },
   nextButtonText: {
     fontFamily: 'Poppins-Bold',
-    fontSize: 16,
+    fontSize: 24,
     color: '#FFFFFF',
+  },
+  skipButton: {
+    backgroundColor: '#ECE6F0',
+    paddingVertical: 15,
+    paddingHorizontal: 50,
+    borderRadius: 8,
+    marginBottom: 10,
+  },
+  skipButtonText: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 24,
+    color: '#Black',
   },
 });

@@ -80,9 +80,12 @@ const Onboard2 = () => {
         <TouchableOpacity style={styles.nextButton} onPress={handleNext}>
           <Text style={styles.nextButtonText}>Next</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-          <Text style={styles.skipButtonText}>Skip</Text>
-        </TouchableOpacity>
+  <TouchableOpacity
+         style={styles.skipButton}
+         onPress={() => navigation.navigate('Onboard3')} // Navigate to Onboard2
+         >
+           <Text style={styles.skipButtonText}>Skip</Text>
+         </TouchableOpacity>
       </View>
     </View>
   );
