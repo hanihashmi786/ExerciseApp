@@ -52,7 +52,7 @@ export const styles = StyleSheet.create({
       fontFamily: 'Poppins-Bold',
       fontSize: 30,
       color: '#FFD700',
-      textAlign: 'center',
+      textAlign: 'center',  
       marginBottom: 20,
 
     },

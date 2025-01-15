@@ -64,6 +64,9 @@ const Dashboard = () => {
       } else if (item === 'Diet Plans') {
         navigation.navigate('SelectDietPlan'); // Navigate to SelectDietPlan
       }
+      else if (item === 'Premium Plans') {
+        navigation.navigate('SelectPremiumPlan'); // Navigate to SelectDietPlan
+      }
       setSidebarVisible(false); // Close the sidebar
     }}
   >
