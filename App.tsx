@@ -10,6 +10,9 @@ import Dashboard from './screens/Dashboard'; // Make sure Onboard2 exists
 import UserSettings from './screens/UserSettings';
 import SelectExercisePlan from './screens/SelectExercisePlan';
 import SelectDietPlan from './screens/SelectDietPlan';
+import ExerciseDetails from './screens/ExerciseDetails';
+import DietPlanDetails from './screens/DietPlanDetails';
+
 
 const Stack = createStackNavigator();
 
@@ -27,6 +30,8 @@ const App = () => {
         <Stack.Screen name="UserSettings" component={UserSettings} />
         <Stack.Screen name="SelectExercisePlan" component={SelectExercisePlan} />
         <Stack.Screen name="SelectDietPlan" component={SelectDietPlan} />
+        <Stack.Screen name="ExerciseDetails" component={ExerciseDetails} />
+        <Stack.Screen name="DietPlanDetails" component={DietPlanDetails} />
 
 
       </Stack.Navigator>
