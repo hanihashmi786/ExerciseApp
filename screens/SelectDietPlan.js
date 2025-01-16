@@ -19,9 +19,9 @@ const SelectDietPlan = () => {
       name: 'Fruits',
       icon: require('../assets/fruits-icon.png'),
       details: {
-        beginner: 'Start with a mix of seasonal fruits for essential vitamins and hydration.',
-        intermediate: 'Incorporate a wider variety of fruits like berries, citrus, and tropical fruits.',
-        advanced: 'Focus on high-antioxidant fruits, pairing them with balanced meals for optimal nutrition.',
+        beginner: 'Start with a mix of seasonal fruits like apples, bananas, and oranges. These provide essential vitamins, hydration, and natural sugars for energy.',
+        intermediate: 'Incorporate a wider variety, such as berries for antioxidants, citrus for vitamin C, and tropical fruits like mango and papaya for added nutrition.',
+        advanced: 'Focus on high-antioxidant fruits like goji berries and acai. Pair fruits with protein-rich foods to stabilize blood sugar levels and enhance digestion.',
       },
     },
     {
@@ -29,9 +29,9 @@ const SelectDietPlan = () => {
       name: 'Vegetables',
       icon: require('../assets/vegetables-icon.png'),
       details: {
-        beginner: 'Begin with basic leafy greens and common vegetables in your diet.',
-        intermediate: 'Include colorful vegetables like bell peppers, carrots, and broccoli.',
-        advanced: 'Diversify with fermented vegetables and explore exotic greens.',
+        beginner: 'Include common vegetables like spinach, carrots, and tomatoes in daily meals for basic fiber and nutrients.',
+        intermediate: 'Add colorful options like bell peppers, zucchini, and broccoli for a variety of vitamins and minerals.',
+        advanced: 'Diversify with fermented vegetables like kimchi and sauerkraut, and explore exotic greens such as bok choy or watercress for a nutritional boost.',
       },
     },
     {
@@ -39,9 +39,9 @@ const SelectDietPlan = () => {
       name: 'Proteins',
       icon: require('../assets/proteins-icon.png'),
       details: {
-        beginner: 'Add basic protein sources like eggs, chicken, and tofu to your meals.',
-        intermediate: 'Incorporate lean meats, fish, and a mix of plant-based proteins.',
-        advanced: 'Focus on protein timing and variety, including advanced supplementation.',
+        beginner: 'Incorporate easily digestible proteins like eggs, chicken breast, tofu, or cottage cheese into meals.',
+        intermediate: 'Include lean meats like turkey, salmon, and a mix of plant-based proteins such as lentils and quinoa.',
+        advanced: 'Focus on protein timing (e.g., post-workout consumption) and variety, such as grass-fed beef, wild-caught fish, and advanced supplementation like whey protein isolate.',
       },
     },
     {
@@ -49,9 +49,9 @@ const SelectDietPlan = () => {
       name: 'Whole Grains',
       icon: require('../assets/whole-grains-icon.png'),
       details: {
-        beginner: 'Include staples like rice, oats, and whole wheat bread in your meals.',
-        intermediate: 'Try diverse grains like quinoa, millet, and farro.',
-        advanced: 'Focus on ancient grains and explore gluten-free options as needed.',
+        beginner: 'Stick to simple staples like brown rice, oatmeal, and whole wheat bread for sustained energy and fiber.',
+        intermediate: 'Experiment with diverse grains like quinoa, bulgur, and millet to expand your nutrient profile.',
+        advanced: 'Focus on ancient grains like amaranth and teff. Explore gluten-free options and monitor your intake based on fitness goals.',
       },
     },
     {
@@ -59,9 +59,9 @@ const SelectDietPlan = () => {
       name: 'Dairy',
       icon: require('../assets/dairy-icon.png'),
       details: {
-        beginner: 'Start with basic dairy like milk, yogurt, and cheese.',
-        intermediate: 'Incorporate low-fat and fortified dairy options.',
-        advanced: 'Explore plant-based alternatives and fermented dairy products.',
+        beginner: 'Introduce basic dairy products like milk, plain yogurt, and mild cheeses for calcium and protein.',
+        intermediate: 'Shift to low-fat, fortified dairy options or lactose-free alternatives to suit your dietary needs.',
+        advanced: 'Incorporate plant-based dairy like almond milk or cashew yogurt. Use fermented options like kefir or Greek yogurt for probiotic benefits.',
       },
     },
     {
@@ -69,9 +69,9 @@ const SelectDietPlan = () => {
       name: 'Healthy Fats',
       icon: require('../assets/healthy-fats-icon.png'),
       details: {
-        beginner: 'Include nuts, seeds, and avocado in your meals.',
-        intermediate: 'Add diverse sources like olive oil, coconut oil, and flaxseed.',
-        advanced: 'Optimize fat intake with omega-3-rich foods and supplements.',
+        beginner: 'Add basic sources like almonds, walnuts, and avocado to meals for healthy fat intake.',
+        intermediate: 'Include diverse options like olive oil, chia seeds, and coconut oil to enhance meal variety and omega-3 content.',
+        advanced: 'Optimize fat intake by focusing on foods rich in omega-3s (e.g., salmon, flaxseed) and supplements like fish oil for anti-inflammatory benefits.',
       },
     },
     {
@@ -79,9 +79,9 @@ const SelectDietPlan = () => {
       name: 'Legumes',
       icon: require('../assets/legumes-icon.png'),
       details: {
-        beginner: 'Start with common legumes like lentils and chickpeas.',
-        intermediate: 'Add black beans, kidney beans, and soy products to your meals.',
-        advanced: 'Experiment with fermented legumes and sprouted options.',
+        beginner: 'Start with staple legumes like lentils, chickpeas, and split peas for an easy source of protein and fiber.',
+        intermediate: 'Incorporate a wider variety like black beans, pinto beans, and soy products such as edamame and tofu.',
+        advanced: 'Experiment with sprouted or fermented legumes for enhanced digestibility and nutrient absorption.',
       },
     },
     {
@@ -89,12 +89,13 @@ const SelectDietPlan = () => {
       name: 'Snacks',
       icon: require('../assets/snacks-icon.png'),
       details: {
-        beginner: 'Opt for simple snacks like fruits and nuts.',
-        intermediate: 'Incorporate protein bars, smoothies, and whole-grain crackers.',
-        advanced: 'Create balanced, nutrient-dense snacks tailored to your needs.',
+        beginner: 'Choose simple, healthy snacks like fresh fruits, raw nuts, or whole-grain crackers for a quick energy boost.',
+        intermediate: 'Incorporate more structured snacks like homemade smoothies, energy bars, or Greek yogurt with toppings.',
+        advanced: 'Focus on balanced, nutrient-dense snacks like quinoa salad, protein-packed mini-meals, or custom-made snack packs to align with fitness goals.',
       },
     },
   ];
+  
 
   const renderDiet = ({ item }) => (
     <TouchableOpacity

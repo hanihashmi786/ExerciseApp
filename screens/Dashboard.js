@@ -37,20 +37,22 @@ const Dashboard = () => {
         <View style={styles.sidebar}>
           {/* Sidebar Header */}
           <View style={styles.sidebarHeader}>
-            <TouchableOpacity
-              onPress={() => setSidebarVisible(false)}
-              style={styles.backButton}
-            >
+          <TouchableOpacity>
             <Image
               source={require('../assets/app-icon.png')} // Replace with your app icon
               style={styles.sidebarImage}
             />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSidebarVisible(false)}
+              style={styles.backButton}
+            >
               <Image
                 source={require('../assets/back-icon.png')} // Replace with your back icon
                 style={styles.icon}
               />
             </TouchableOpacity>
-            
+
           </View>
           <View style={styles.sidebarSeparator} />
           {/* Sidebar Items */}

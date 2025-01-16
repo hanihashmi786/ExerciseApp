@@ -20,9 +20,9 @@ const SelectExercisePlan = () => {
       name: 'Leg Press',
       icon: require('../assets/legpress-icon.png'),
       details: {
-        beginner: 'Build strength with this beginner leg press plan.',
-        intermediate: 'Enhance muscle power with this intermediate leg press plan.',
-        advanced: 'Maximize strength with the advanced leg press plan.',
+        beginner: 'Start with low weights and focus on proper form to avoid injury. Perform 3 sets of 10-12 reps, taking rest between sets.',
+        intermediate: 'Increase the weight gradually and perform 4 sets of 8-10 reps. Incorporate single-leg presses to target imbalances.',
+        advanced: 'Focus on heavy weights with 5 sets of 6-8 reps. Include drop sets and tempo variations for maximum strength and muscle growth.',
       },
     },
     {
@@ -30,9 +30,9 @@ const SelectExercisePlan = () => {
       name: 'Stretching',
       icon: require('../assets/stretching-icon.png'),
       details: {
-        beginner: 'Basic stretches to improve flexibility.',
-        intermediate: 'Dynamic stretches for active performance.',
-        advanced: 'Deep stretches for advanced practitioners.',
+        beginner: 'Perform static stretches for 15-20 seconds per muscle group, focusing on basic areas like hamstrings, quads, and shoulders.',
+        intermediate: 'Incorporate dynamic stretches like leg swings and arm circles for better range of motion and mobility. Hold static stretches for 30 seconds.',
+        advanced: 'Practice PNF (Proprioceptive Neuromuscular Facilitation) stretches and deep flexibility routines targeting advanced poses and splits.',
       },
     },
     {
@@ -40,9 +40,9 @@ const SelectExercisePlan = () => {
       name: 'Sprinting',
       icon: require('../assets/sprinting-icon.png'),
       details: {
-        beginner: 'Learn basic sprinting techniques for beginners.',
-        intermediate: 'Increase speed with this intermediate sprint plan.',
-        advanced: 'Advanced drills for experienced sprinters.',
+        beginner: 'Learn the basics of sprinting with 50-meter sprints at 50-60% effort. Rest 2 minutes between each sprint for recovery.',
+        intermediate: 'Perform 100-meter sprints at 70-80% effort with shorter rest periods. Incorporate hill sprints to improve strength and endurance.',
+        advanced: 'Focus on 200-400 meter sprints at full effort. Combine sprint intervals with resistance training for peak speed performance.',
       },
     },
     {
@@ -50,9 +50,9 @@ const SelectExercisePlan = () => {
       name: 'Weightlifting',
       icon: require('../assets/weightlifting-icon.png'),
       details: {
-        beginner: 'Start with foundational weightlifting exercises.',
-        intermediate: 'Build muscle strength with an intermediate plan.',
-        advanced: 'Advanced techniques for experienced lifters.',
+        beginner: 'Focus on compound exercises like squats, deadlifts, and bench presses with light weights. Perform 3 sets of 10-12 reps.',
+        intermediate: 'Increase weight and focus on hypertrophy with 4 sets of 8-10 reps. Include isolation exercises like bicep curls and tricep extensions.',
+        advanced: 'Incorporate advanced techniques like supersets, drop sets, and pyramid schemes with heavier weights and lower reps for strength gains.',
       },
     },
     {
@@ -60,9 +60,9 @@ const SelectExercisePlan = () => {
       name: 'Running',
       icon: require('../assets/running-icon.png'),
       details: {
-        beginner: 'A beginner-friendly running routine.',
-        intermediate: 'Boost endurance with this intermediate plan.',
-        advanced: 'Advanced running strategies for distance and speed.',
+        beginner: 'Start with short runs or jogs (1-2 km) at a slow pace. Focus on maintaining a steady rhythm and proper running posture.',
+        intermediate: 'Run 3-5 km at a moderate pace, incorporating interval training to build stamina and improve speed.',
+        advanced: 'Train for long-distance running (10 km or more) with tempo runs, intervals, and recovery runs for peak endurance.',
       },
     },
     {
@@ -70,9 +70,9 @@ const SelectExercisePlan = () => {
       name: 'Meditation',
       icon: require('../assets/meditation-icon.png'),
       details: {
-        beginner: 'Learn basic meditation techniques.',
-        intermediate: 'Develop focus with an intermediate meditation plan.',
-        advanced: 'Master mindfulness with advanced meditation techniques.',
+        beginner: 'Practice mindful breathing for 5-10 minutes daily. Sit in a quiet space and focus on your breath to calm your mind.',
+        intermediate: 'Increase sessions to 15-20 minutes, incorporating guided meditations for focus and stress relief.',
+        advanced: 'Engage in advanced meditation practices like Vipassana or Transcendental Meditation, dedicating 30+ minutes daily to mindfulness.',
       },
     },
     {
@@ -80,9 +80,9 @@ const SelectExercisePlan = () => {
       name: 'Kickboxing',
       icon: require('../assets/kickboxing-icon.png'),
       details: {
-        beginner: 'Learn basic kickboxing moves.',
-        intermediate: 'Enhance skills with an intermediate kickboxing plan.',
-        advanced: 'Advanced kickboxing techniques for competition.',
+        beginner: 'Learn basic punches (jab, cross) and kicks (front, roundhouse) with shadowboxing for 15-20 minutes.',
+        intermediate: 'Combine combinations of punches and kicks, including pad work and basic defensive techniques. Train for 30-40 minutes.',
+        advanced: 'Focus on sparring, advanced techniques, and endurance drills. Include heavy bag work and strategy sessions for competitive edge.',
       },
     },
     {
@@ -90,9 +90,9 @@ const SelectExercisePlan = () => {
       name: 'Diet Plans',
       icon: require('../assets/diet-plans-icon.png'),
       details: {
-        beginner: 'Basic healthy eating guidelines.',
-        intermediate: 'Structured diet plans for fitness goals.',
-        advanced: 'Advanced nutritional strategies for peak performance.',
+        beginner: 'Start by incorporating balanced meals with vegetables, lean protein, and whole grains. Avoid processed foods.',
+        intermediate: 'Follow structured diet plans with macronutrient tracking. Include meal prepping for better consistency.',
+        advanced: 'Optimize nutrition with specific calorie goals, nutrient timing, and supplements to enhance performance and recovery.',
       },
     },
   ];

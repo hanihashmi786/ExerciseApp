@@ -132,13 +132,15 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
   },
   backButton: {
+    marginTop: -50,
     padding: 10,
   },
   sidebarImage: {
+    marginTop: 50,
     width: 150,
     height: 150,
     borderRadius: 30,
-      marginRight: 10, // Add spacing between icon and back button
+    marginRight: 10, // Add spacing between icon and back button
 
   },
   sidebarSeparator: {
@@ -150,7 +152,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 10,
     borderRadius: 10,
-    marginBottom: 10,
+    marginBottom: 5,
   },
   sidebarItemSelected: {
     backgroundColor: '#FFFFFF',
