@@ -79,7 +79,7 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
   },
   nextButtonText: {
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'NunitoSans-Regular',
     fontSize: 24,
     color: '#FFFFFF',
   },
@@ -91,7 +91,7 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
   },
   skipButtonText: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'NunitoSans-Regular',
     fontSize: 24,
     color: '#Black',
   },

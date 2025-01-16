@@ -34,10 +34,10 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontFamily: 'Poppins-Bold',
-    fontSize: 24,
-    color: '#000000',
+    fontSize: 26,
+    color: '#003F63',
     textAlign: 'center',
-    marginBottom: 20,
+    marginBottom: 0,
   },
   highlight: {
     color: '#FFBD27',
@@ -87,7 +87,7 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
   },
   nextButtonText: {
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'NunitoSans-Regular',
     fontSize: 24,
     color: '#FFFFFF',
   },
@@ -99,7 +99,7 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
   },
   skipButtonText: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'NunitoSans-Regular',
     fontSize: 24,
     color: '#Black',
   },

@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
     marginTop: 20,
     fontFamily: 'Poppins-Bold',
     fontSize: 28,
-    color: '#002B5C',
+    color: '#003F63',
     textAlign: 'center',
   },
   headingSecondLine: {
@@ -103,14 +103,14 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
   },
   cardTitle: {
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Roboto-Bold',
     fontSize: 24,
     color: '#fffff',
     marginBottom: 5,
     
   },
   cardDescription: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Roboto-Regular',
     fontSize: 14,
     color: '#000000',
     textAlign: 'center',

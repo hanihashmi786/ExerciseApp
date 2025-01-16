@@ -147,26 +147,35 @@ const Dashboard = () => {
         showsHorizontalScrollIndicator={false}
         style={styles.cardScroll}
       >
-        <View style={styles.card}>
+        {/* Exercise Plans Card */}
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => navigation.navigate('SelectExercisePlan')} // Navigate to SelectExercisePlan
+        >
           <Image
             source={require('../assets/exercise-icon.png')} // Replace with your exercise icon
             style={styles.cardIcon}
           />
           <Text style={styles.cardTitle}>Exercise Plans</Text>
           <Text style={styles.cardDescription}>
-            Quick access to personalized meal plans tailored to user goals.
+            Quick access to personalized exercise plans tailored to user goals.
           </Text>
-        </View>
-        <View style={styles.card}>
+        </TouchableOpacity>
+
+        {/* Diet Plans Card */}
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => navigation.navigate('SelectDietPlan')} // Navigate to SelectDietPlan
+        >
           <Image
             source={require('../assets/diet-icon.png')} // Replace with your diet icon
             style={styles.cardIcon}
           />
           <Text style={styles.cardTitle}>Diet Plans</Text>
           <Text style={styles.cardDescription}>
-            A button to access diet plans tailored to personal health goals.
+            Personalized meal plans tailored to your health goals.
           </Text>
-        </View>
+        </TouchableOpacity>
         {/* Add more cards as needed */}
       </ScrollView>
     </View>

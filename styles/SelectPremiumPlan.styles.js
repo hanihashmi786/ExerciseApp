@@ -26,15 +26,16 @@ export const styles = StyleSheet.create({
   },
   highlight: {
     color: '#FFD700',
+    fontFamily: 'Poppins-Bold',
   },
   title: {
-    fontFamily: 'Poppins-Bold',
-    fontSize: 28, // Increased font size for better readability
+    fontFamily: 'Poppins-Regular',
+    fontSize: 24, // Increased font size for better readability
     color: '#002B5C',
     textAlign: 'center',
     lineHeight: 36, // Adjusted for two lines
     magrinTop: 20,
-    marginBottom: 60,
+    marginBottom: 100,
   },
   premiumPlansContainer: {
     flexDirection: 'row',
@@ -46,6 +47,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     width: 140, // Increased size of the container
     height: 180, // Increased size of the container
+    
   },
   iconContainer: {
     width: 100, // Increased icon container size
@@ -61,7 +63,7 @@ export const styles = StyleSheet.create({
     height: 80,
   },
   planName: {
-    fontFamily: 'Poppins-SemiBold', // Updated to a bolder font for emphasis
+    fontFamily: 'NunitoSans-Regular',
     fontSize: 16, // Increased text size
     color: '#002B5C',
     textAlign: 'center',

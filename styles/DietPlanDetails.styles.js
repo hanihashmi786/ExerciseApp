@@ -60,13 +60,13 @@ export const styles = StyleSheet.create({
       padding: 20,
     },
     detailsHeading: {
-      fontFamily: 'Poppins-Bold',
+      fontFamily: 'Roboto-Bold',
       fontSize: 18,
       color: '#002B5C',
       marginBottom: 5,
     },
     detailsText: {
-      fontFamily: 'Poppins-Regular',
+      fontFamily: 'Roboto-Regular',
       fontSize: 16,
       color: '#555555',
       marginBottom: 15,

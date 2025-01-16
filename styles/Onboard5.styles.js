@@ -11,10 +11,10 @@ export const styles = StyleSheet.create({
   },
   unitButton: {
     paddingVertical: 10,
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
     backgroundColor: '#E0E0E0',
-    borderRadius: 8,
-    marginHorizontal: 5,
+    borderRadius: 0,
+    marginHorizontal: 0,
   },
   unitButtonSelected: {
     backgroundColor: '#FFBD27',
@@ -59,7 +59,7 @@ export const styles = StyleSheet.create({
     height: 200,
     resizeMode: 'contain',
     alignSelf: 'center',
-    marginTop: -20,
+    marginTop: -50,
     marginBottom: 10, // To create space above the "Next" button
   },
 
@@ -78,7 +78,7 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
   },
   nextButtonText: {
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'NunitoSans-Regular',
     fontSize: 24,
     color: '#FFFFFF',
   },
@@ -90,7 +90,7 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
   },
   skipButtonText: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'NunitoSans-Regular',
     fontSize: 24,
     color: '#Black',
   },

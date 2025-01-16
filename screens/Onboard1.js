@@ -55,9 +55,11 @@ const Onboard1 = () => {
 
       {/* Title */}
       <Text style={styles.title}>
-        What <Text style={styles.highlight}>Motivates</Text> You The Most?
+        What <Text style={styles.highlight}>Motivates</Text>
       </Text>
-
+      <Text style={styles.title}>
+        You The Most 
+      </Text>  
       {/* Options */}
       <FlatList
         data={options}

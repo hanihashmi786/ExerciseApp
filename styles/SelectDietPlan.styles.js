@@ -53,13 +53,13 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
   },
   dietText: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Roboto-Regular',
     fontSize: 16,
     color: '#002B5C',
     textAlign: 'center',
   },
   selectedDietText: {
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Roboto-Bold',
     color: '#FFD700',
   },
 });
