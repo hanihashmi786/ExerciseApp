@@ -1,58 +1,70 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
-export const styles = StyleSheet.create({
+const { width } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    backgroundColor: '#050c24',
     alignItems: 'center',
-    padding: 20,
+    justifyContent: 'space-between',
+    paddingVertical: 60,
   },
-  illustration: {
-    width: 250,
-    height: 250,
-    resizeMode: 'contain',
+  logoContainer: {
+    alignItems: 'center',
+    marginTop: 40,
+  },
+  logo: {
+    width: 200,
+    height: 100,
+    marginBottom: 10,
+  },
+  taglineContainer: {
+    backgroundColor: 'white',
+    paddingHorizontal: 15,
+    paddingVertical: 5,
+    borderRadius: 20,
+    marginTop: 10,
+  },
+  taglineText: {
+    fontFamily: 'Inter-SemiBold',
+    color: '#000',
+    fontSize: 14,
+    fontWeight: '500',
+  },
+  welcomeContainer: {
+    alignItems: 'center',
+    marginTop: 40,
+  },
+  welcomeTitle: {
+    fontFamily: 'Inter-SemiBold',
+    color: 'white',
+    fontSize: 28,
+    marginBottom: 10,
+  },
+  welcomeSubtitle: {
+    fontFamily: 'Inter-Light',
+    color: '#aaaaaa',
+    fontSize: 16,
+    textAlign: 'center',
+    lineHeight: 22,
+  },
+  buttonContainer: {
+    width: width * 0.8,
     marginBottom: 40,
   },
-  textContainer: {
-    alignItems: 'center',
-    marginBottom: 60,
-  },
-  title: {
-    fontSize: 28,
-    color: '#FFFFFF',
-    textAlign: 'center',
-    fontFamily: 'ProtestStrike-Regular',
-
-  },
-  highlight: {
-    color: '#FFFFFF',
-    fontFamily: 'ProtestStrike-Regular',
-
-  },
-  subtitle: {
-    fontSize: 16,
-    color: '#FFFFFF',
-    textAlign: 'center',
-    marginTop: 8,
-    fontFamily: 'Poppins-Regular',
-
-  },
   button: {
-    backgroundColor: '#002B5C',
-    width: '80%',
     paddingVertical: 15,
     borderRadius: 25,
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 4,
-    elevation: 5,
+    justifyContent: 'center',
   },
   buttonText: {
+    fontFamily: 'Inter-SemiBold',
+    color: 'white',
     fontSize: 18,
     fontWeight: '600',
-    color: '#FFFFFF',
-    fontFamily: 'NunitoSans-Regular',
   },
 });
+
+export default styles;

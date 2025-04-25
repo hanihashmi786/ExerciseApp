@@ -3,18 +3,22 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import SplashScreen from './screens/SplashScreen';
-import Onboard1 from './screens/Onboard1';
-import Onboard2 from './screens/Onboard2';
-import Onboard3 from './screens/Onboard3';
-import Onboard4 from './screens/Onboard4';
-import Onboard5 from './screens/Onboard5';
+import Signin from './screens/Signin';
+import Signup from './screens/Signup';
+import SignupCompany from './screens/SignupCompany';
+import SignupSecurity from './screens/SignupSecurity';
 import Dashboard from './screens/Dashboard';
-import UserSettings from './screens/UserSettings';
-import SelectExercisePlan from './screens/SelectExercisePlan';
-import SelectDietPlan from './screens/SelectDietPlan';
-import ExerciseDetails from './screens/ExerciseDetails';
-import DietPlanDetails from './screens/DietPlanDetails';
-import SelectPremiumPlan from './screens/SelectPremiumPlan';
+import SystemSetup from './screens/SystemSetup';
+import MakePayment from './screens/MakePayment';
+import PageNotFound from './screens/PageNotFound';
+import MakeIntegrations from './screens/MakeIntegrations';
+import Profile from './screens/Profile';
+import CompanyProfile from './screens/CompanyProfile';
+import OTPAuthenticationScreen from './screens/OTPAuthenticationScreen';
+import Company from './screens/Company';
+import Calls from './screens/Calls';
+import BillingScreen from './screens/BillingScreen';
+import Client from './screens/Client';
 
 const Stack = createStackNavigator();
 
@@ -30,26 +34,27 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  if (isLoading) {
-    return <SplashScreen/>; // Show splash screen while loading
-  }
 
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="SplashScreen" screenOptions={{ headerShown: false }}>
       <Stack.Screen name="SplashScreen" component={SplashScreen} />
-        <Stack.Screen name="Onboard1" component={Onboard1} />
-        <Stack.Screen name="Onboard2" component={Onboard2} />
-        <Stack.Screen name="Onboard3" component={Onboard3} />
-        <Stack.Screen name="Onboard4" component={Onboard4} />
-        <Stack.Screen name="Onboard5" component={Onboard5} />
-        <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="UserSettings" component={UserSettings} />
-        <Stack.Screen name="SelectExercisePlan" component={SelectExercisePlan} />
-        <Stack.Screen name="SelectDietPlan" component={SelectDietPlan} />
-        <Stack.Screen name="ExerciseDetails" component={ExerciseDetails} />
-        <Stack.Screen name="DietPlanDetails" component={DietPlanDetails} />
-        <Stack.Screen name="SelectPremiumPlan" component={SelectPremiumPlan} />
+      <Stack.Screen name="Signin" component={Signin} />
+      <Stack.Screen name="Signup" component={Signup} />
+      <Stack.Screen name="SignupCompany" component={SignupCompany} />
+      <Stack.Screen name="SignupSecurity" component={SignupSecurity} />
+      <Stack.Screen name="Dashboard" component={Dashboard} />
+      <Stack.Screen name="SystemSetup" component={SystemSetup} />
+      <Stack.Screen name="MakePayment" component={MakePayment} />
+      <Stack.Screen name="PageNotFound" component={PageNotFound} /> 
+      <Stack.Screen name="MakeIntegrations" component={MakeIntegrations} />
+      <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="CompanyProfile" component={CompanyProfile} />
+      <Stack.Screen name="OTPAuthenticationScreen" component={OTPAuthenticationScreen} />
+      <Stack.Screen name="Company" component={Company} />
+      <Stack.Screen name="Calls" component={Calls} />
+      <Stack.Screen name="BillingScreen" component={BillingScreen} />
+      <Stack.Screen name="Client" component={Client} />
       </Stack.Navigator>
     </NavigationContainer>
   );

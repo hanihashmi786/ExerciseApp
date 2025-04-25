@@ -55,6 +55,9 @@
 		<string>Roboto-Regular.ttf</string>
 		<string>NunitoSans-Regular.ttf</string>
 		<string>Roboto-Bold.ttf</string>
+		<string>Inter-Light.ttf</string>
+		<string>Inter-SemiBold.ttf</string>
+		<string>Inter.ttf</string>
 	</array>
 </dict>
 </plist>

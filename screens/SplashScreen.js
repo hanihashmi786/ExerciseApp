@@ -1,35 +1,58 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image } from 'react-native';
+import { 
+  View, 
+  Text, 
+  SafeAreaView, 
+  TouchableOpacity, 
+  StatusBar, 
+  Image
+} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import { styles } from '../styles/SplashScreen.styles'; // Make sure the path is correct
+import styles from '../styles/SplashScreen.styles';
 
 const SplashScreen = ({ navigation }) => {
+  const handleGetStarted = () => {
+    navigation.navigate('Signin');
+
+  };
+
   return (
-    <LinearGradient
-      colors={['#FFC404', '#FF9C13']}
-      style={styles.container}
-    >
-      {/* Illustration */}
-      <Image
-        source={require('../assets/runner_illustration.png')} // Replace with your actual asset
-        style={styles.illustration}
-      />
-
-      {/* Text */}
-      <View style={styles.textContainer}>
-        <Text style={styles.title}>Welcome To</Text>
-        <Text style={[styles.title, styles.highlight]}>Lose Weight</Text>
-        <Text style={styles.subtitle}>More Professional More Focused</Text>
+    <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="light-content" />
+      
+      <View style={styles.logoContainer}>
+        <Image 
+          source={require('../assets/CallLoom.png')} 
+          style={styles.logo}
+          resizeMode="contain"
+        />
+        
+        <View style={styles.taglineContainer}>
+          <Text style={styles.taglineText}>Seamless & Secure Communication</Text>
+        </View>
       </View>
-
-      {/* Button */}
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('Onboard1')} // Replace 'Onboard1' with your target screen
+      
+      <View style={styles.welcomeContainer}>
+        <Text style={styles.welcomeTitle}>Welcome to Call Loom!</Text>
+        <Text style={styles.welcomeSubtitle}>
+          Stay connected with crystal-clear calls{'\n'}and a smooth user experience.
+        </Text>
+      </View>
+      
+      <TouchableOpacity 
+        style={styles.buttonContainer}
+        onPress={handleGetStarted}
       >
-        <Text style={styles.buttonText}>Get Started</Text>
+        <LinearGradient
+          colors={['#4e66f8', '#8a4af3']}
+          start={{x: 0, y: 0}}
+          end={{x: 1, y: 1}}
+          style={styles.button}
+        >
+          <Text style={styles.buttonText}>Let's Get Started</Text>
+        </LinearGradient>
       </TouchableOpacity>
-    </LinearGradient>
+    </SafeAreaView>
   );
 };
 
